@@ -19,3 +19,26 @@
 
 - für drei Features gibt es jeweils zwei Sensoren, wobei die gemessen Werte schon einiges voneinander abweichen... bisher keine Ahnung warum -> evtl. Temperatur abhängig
 - PT08 Werte sind ungenauer als die anderen Werte, die durch einen reference analyzer (sehr teuer und wartungsintensiv) gemessen wurden
+
+**First try:**
+
+- linear-regression with 14 features
+- target: 'CO(GT)'
+
+**Second try:**
+
+- linear-regression with 14 features
+- removed "-200" values
+- target: 'CO(GT)'
+  Mean Squared Error: 0.44032372464480835
+  R^2 Score: 0.8261430005745448
+
+**Third try:**
+
+- linear-regression with 14 features
+- removed "-200" values
+- inverted 'PT08.S3(NOx)' Sensor -> because he was negative correlated
+- normalized all the features -> value 0-1
+- target: 'CO(GT)'
+  Mean Squared Error: 0.003109411232574027
+  R^2 Score: 0.8261430005745448
