@@ -32,3 +32,8 @@
 
 6. training ,it 25 epochs, 80/20 split, seq_length = 24
    ![Alt text](image-1.png)
+
+7. Number of neurons increase or decrease the y-value while the amplitude is decreasing over time
+   ![Alt text](image-2.png)
+
+8.
