@@ -1,0 +1,11 @@
+1. training with 10 epochs
+   Predicted value at 2005-05-11 19:00:00: 3.005616375803948
+   Predicted value at 2005-04-11 19:00:00: 3.005616375803948
+   Predicted value at 2005-04-12 13:00:00: 3.005615666508675
+
+2. training with 40 epochs
+   Predicted value at 2005-04-12 13:00:00: 0.9350867442786694
+   Predicted value at 2005-04-12 09:00:00: 1.41403456479311
+   Predicted value at 2005-04-12 01:00:00: 2.601187559962273
+   Predicted value at 2005-04-12 04:00:00: 2.202501553297043
+   Predicted value at 2005-04-14 04:00:00: 1.9597812429070474
