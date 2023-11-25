@@ -24,6 +24,8 @@
 
 - linear-regression with 14 features
 - target: 'CO(GT)'
+  MSE?
+  R^2?
 
 **Second try:**
 
@@ -36,9 +38,17 @@
 **Third try:**
 
 - linear-regression with 14 features
-- removed "-200" values
+- make all "-200" values in "0"
 - inverted 'PT08.S3(NOx)' Sensor -> because he was negative correlated
 - normalized all the features -> value 0-1
 - target: 'CO(GT)'
   Mean Squared Error: 0.003109411232574027
   R^2 Score: 0.8261430005745448
+
+**Forth try:**
+
+- replace all "-200" values with None
+- then forward fill the values
+- X_scaled.fillna(method='ffill', inplace=True)
+  Mean Squared Error: 0.002970506226146706
+  R^2 Score: 0.8206009327903534
